@@ -10,6 +10,7 @@ export default function handler(lambda: Function) {
       statusCode = 200;
     } catch (error) {
       statusCode = 500;
+
       if (error instanceof Error) {
         body = { error: error.message };
       } else {
