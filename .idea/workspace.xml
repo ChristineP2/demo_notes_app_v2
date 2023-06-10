@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23bb186f-8914-41d5-a970-7131e886da47" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seed.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-workspace.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-workspace.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sst.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sst.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stacks/ApiStack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stacks/ApiStack.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stacks/AuthStack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stacks/AuthStack.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stacks/FrontendStack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stacks/FrontendStack.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686164986708</updated>
       <workItem from="1686164990812" duration="24372000" />
-      <workItem from="1686335098119" duration="11502000" />
+      <workItem from="1686335098119" duration="13219000" />
     </task>
     <servers />
   </component>
