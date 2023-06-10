@@ -31,14 +31,6 @@ export function AuthStack({ stack, app }: StackContext) {
     UserPoolId: auth.userPoolId,
     IdentityPoolId: auth.cognitoIdentityPoolId,
     UserPoolClientId: auth.userPoolClientId,
-    apigTestFlags: `
-       --user-pool-id='${auth.userPoolId}' \\
-       --app-client-id='${auth.userPoolClientId}' \\
-       --cognito-region='${app.region}' \\
-       --identity-pool-id='${auth.cognitoIdentityPoolId}' \\
-       --invoke-url='${api.url}' \\
-       --api-gateway-region='${app.region}' \\
-    `
   });
 
   // Return the auth resource
