@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 import {useNavigate} from "react-router-dom";
 import LoaderButton from "../components/LoaderButton";
 import {useAppContext} from "../lib/contextLib";
-import {FieldsType, useFormFields} from "../lib/hooksLib";
+import {useFormFields} from "../lib/hooksLib";
 import { Auth } from "aws-amplify";
 import {onError} from "../lib/errorLib";
 import {ISignUpResult} from "amazon-cognito-identity-js";

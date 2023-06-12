@@ -1,15 +1,14 @@
-import React, {FormEventHandler, useState} from "react";
+import React, {useState} from "react";
 import Form from "react-bootstrap/Form";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import LoaderButton from "../components/LoaderButton";
 import { useFormFields } from "../lib/hooksLib";
 import "./BillingForm.css";
-import {StripeExpressCheckoutElementClickEvent} from "@stripe/stripe-js";
+import {Token} from "@stripe/stripe-js";
 
-
-interface BillingFormType {
+export interface BillingFormType {
   isLoading: boolean,
-  onSubmit: (storage: string, { token, error }: { token: any, error: any }) => void
+  onSubmit: (storage: string, { token, error }: { token: Token | undefined, error: unknown }) => void
 }
 
 export default function BillingForm({ isLoading, onSubmit }: BillingFormType) {

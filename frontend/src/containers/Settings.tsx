@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { API } from "aws-amplify";
 import { Elements } from "@stripe/react-stripe-js";
 import { useNavigate } from "react-router-dom";
-import { loadStripe } from "@stripe/stripe-js";
+import { loadStripe, Token } from "@stripe/stripe-js";
 import {BillingDetailsType} from "../lib/billingLib";
 import { onError } from "../lib/errorLib";
 import BillingForm from "./BillingForm";
@@ -20,7 +20,7 @@ export default function Settings() {
     });
   }
 
-  async function handleFormSubmit(storage: string, { token, error }: { token: any, error: any }):Promise<void> {
+  async function handleFormSubmit(storage: string, { token, error }: { token: Token | undefined, error: unknown }):Promise<void> {
     if (error) {
       onError(error);
       return;
@@ -29,6 +29,10 @@ export default function Settings() {
     setIsLoading(true);
 
     try {
+      if ( token === undefined) {
+        throw new Error('No Token Provided -- Stripe')
+      }
+
       await billUser({
         storage,
         source: token.id,
