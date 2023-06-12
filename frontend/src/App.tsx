@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useNavigate } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 import { AppContext, AppContextType } from "./lib/contextLib";
-import Routes from "./Routes";
+import Links from "./Routes";
 import { onError } from "./lib/errorLib";
 import "./App.css";
 
@@ -69,7 +69,7 @@ function App () {
           </Navbar.Collapse>
         </Navbar>
         <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
-          <Routes />
+          <Links />
         </AppContext.Provider>
       </div>
     );
